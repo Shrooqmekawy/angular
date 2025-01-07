@@ -1,0 +1,34 @@
+<div class="title d-flex justify-content-center align-items-start  mt-5 p-3">
+    <div class="container items mt-5">
+    <div class="mt-5">
+     <div class=" text-center  ">
+         <h1 class="text-uppercase  ">contact</h1>
+         <div class="star  d-flex align-items-center justify-content-center my-1"><span class="rounded-pill"></span> <i class=" fa-solid fa-star  fs-5"></i><span class="rounded-pill"></span></div>
+     </div>
+    </div>
+ </div>
+</div>
+<section class="container px-5 mb-5">
+    <form >
+       <div class="inputs d-flex flex-column  justify-content-center px-5 ">
+        
+       <div class=" name my-3">
+         <label [class]="{'label-change': changeplace(username)}" for="username">username: </label>
+        <input [(ngModel)]='username' (keyup)="changeplace(username)" type="text" name="username" id="username" placeholder="username" class="form-control  border-0 border-bottom "></div>
+        <div class="age  my-3">
+            <label [class]="{'label-change': changeplace(userage)}"  for="userage ">userage: </label>
+            <input [(ngModel)]='userage' (keyup)="changeplace(userage)"  name="userage" id="userage" placeholder="userage" class="form-control  border-0 border-bottom"></div>
+       
+        <div class="email  my-3">
+             <label [class]="{'label-change': changeplace(useremail)}" for="useremail">user-email: </label>
+            <input [(ngModel)]='useremail' (keyup)="changeplace(useremail)" type="email" name="useremail" id="useremail" placeholder="user-email" class="form-control  border-0 border-bottom"></div>
+       
+   <div class="pss  my-3">    
+      <label [class]="{'label-change': changeplace(userpass)}" for="useremail">userpass: </label>
+    <input [(ngModel)]='userpass' (keyup)="userpass" type="password" name="userpass" id="userpass" placeholder="userpass" class="form-control  border-0 border-bottom"></div>
+       <div><button class="btn rounded-3 p-2 bgbtn border-0  text-white fs-6">send message</button></div> 
+       </div>
+      
+    </form>
+   
+</section>

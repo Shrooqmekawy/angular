@@ -1,0 +1,26 @@
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight:400 ;
+}
+.clip-color{
+    font-size: 5rem;
+    background-image: linear-gradient(to top, rgb(208, 9, 9) ,#b750ab ,rgb(89, 6, 134))!important;
+    background-clip:text!important;
+    -webkit-text-fill-color: transparent!important;
+}
+.Navbar{
+   transform: translateY(-20px);
+  transition: all 0.5s  linear; 
+  background-color: black!important;
+ 
+}
+.activelink{
+  background-image: linear-gradient(to right, rgb(208, 9, 9) ,#b750ab ,rgb(187, 118, 225))!important;
+  background-clip:text!important;
+  -webkit-text-fill-color: transparent!important;
+}
+.navbar-toggler{
+  box-shadow: none;
+}

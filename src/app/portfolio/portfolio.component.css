@@ -1,0 +1,64 @@
+span{
+    height: 4px;
+    width:6rem;
+    background-image: linear-gradient(to right, rgb(208, 9, 9) ,#b750ab ,rgb(89, 6, 134));
+    margin: 0 15px;
+    
+}
+.clip-color{
+    
+    background-image: linear-gradient(to top, rgb(208, 9, 9) ,#b750ab ,rgb(89, 6, 134));
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.images{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#bigLayer{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.items{
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer{
+
+    transition: all 0.3s 0.02s linear
+}
+.items:hover .layer{
+       top: 50% !important;
+}
+/* spinner */
+/* .loader {
+    position: relative;
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .loader::after , .loader::before  {
+    content: '';
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #FFF;
+    background-image:  radial-gradient(circle 14px, #0d161b 100%, transparent 0);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: eyeMove 10s infinite , blink 10s infinite;
+  }
+  @keyframes eyeMove {
+    0%  , 10% {     background-position: 0px 0px}
+    13%  , 40% {     background-position: -15px 0px}
+    43%  , 70% {     background-position: 15px 0px}
+    73%  , 90% {     background-position: 0px 15px}
+    93%  , 100% {     background-position: 0px 0px}
+  }
+  @keyframes blink {
+    0%  , 10% , 12% , 20%, 22%, 40%, 42% , 60%, 62%,  70%, 72% , 90%, 92%, 98% , 100%
+    { height: 48px}
+    11% , 21% ,41% , 61% , 71% , 91% , 99%
+    { height: 18px}
+  } */

@@ -1,0 +1,13 @@
+.bg{
+    background-image:url(/img/1_hiTjm9NOuPsyL12GaTRJMg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    height: 4px;
+    width:6rem;
+    background-color: whitesmoke;
+    margin: 0 15px;
+    
+}

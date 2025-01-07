@@ -1,0 +1,52 @@
+<header class=" ">
+    <div class="title d-flex justify-content-center align-items-start mt-5  p-3">
+      <div class="container items my-5">
+      <div class="my-5">
+       <div class=" text-center my-5 ">
+           <h1 class="text-uppercase  ">portfolio</h1>
+           <div class="star  d-flex align-items-center justify-content-center my-1"><span class="rounded-pill"></span> <i class="clip-color fa-solid fa-star text-white fs-5"></i><span class="rounded-pill"></span></div>
+          
+       </div>
+      </div>
+   </div>
+   
+  </div>
+  
+  
+      <section class="pb-5 position-relative">
+        <div class="container">
+          <div class="row g-4">
+           @for ( image of images ; track $index) {
+            <div class="col-md-4 ">
+              <div class="items position-relative" >
+                <img class="w-100 images " [src]="image" alt="angular">
+                <div  (click)="getimg(image)" class="layer rounded-top-pill position-absolute  top-100 bottom-0 mx-3  bg-white p-4 opacity-75 "><i  class=" clip-color fs-2 fa-solid fa-plus-circle"></i><p class="clip-color">click</p></div>
+            </div>
+           </div>
+           }
+          
+           
+        
+        </div>
+        </div>
+        
+      </section>  
+   <!--                                             layer                                -->
+           <div (click)="escimg()" id="bigLayer" class="py-5 position-fixed top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center " [class.d-none]="!imagesrc" >
+            <div class="container p-2 m-2 position-relative col-md-6">
+                <img class="w-100 rounded-2" [src]="imagesrc" alt="img">
+                <div class="rounded-circle bg-transparent mt-3 position-absolute top-0 end-0 me-4 mt-4" (click)="escimg()">
+                    <i class="fa-solid fa-xmark-circle text-white fs-3"></i>
+                </div>
+            </div>
+        </div>
+         
+      <!-- <!-- @loading {
+        <span class="loader"></span>
+      } -->
+       -->
+    </header>
+  
+  
+  
+    
